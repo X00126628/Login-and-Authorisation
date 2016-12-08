@@ -7,6 +7,9 @@
 GET     /                     controllers.HomeController.index(name: String ?="visitor")
 
 GET     /about                      controllers.HomeController.about
+GET     /login                      controllers.LoginController.login
+POST    /loginSubmit                controllers.LoginController.loginSubmit
+GET     /logou                      controllers.LoginController.logout
 
 # products accepts a parameter default to 0 (Long)
 GET     /products                   controllers.HomeController.products(cat:Long ?=0L)
